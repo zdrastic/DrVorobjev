@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DrVorobjev</title>
-	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/reset.css">
-</head>
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="./js/script.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"></head>
 <body>
 <div class="wrapper">
 	<header class="header">
@@ -30,28 +33,31 @@
 			<div class="section1__info">
 				<h2>ALCOHOL ADDICTION TREATMENT CLINIC</h2>
 				<div class="section1__summary">
-					<h3>Summary:</h3>
-					<p></p>
-					<p></p>
+					<p>Summary:</p>
+					<p>Flight: from Germany to Srbija  in 5 hours</p>
+					<p>Programs: from 7 days, from 4 000$</p>
 				</div>
 				<form class="section1__form" id="consultation-form">
-					<label for="name">Имя:</label>
-					<input type="text" id="name" name="name" required>
-					
-					<label for="phone">Номер телефона:</label>
-					<input type="tel" id="phone" name="phone" required>
-					
-					<label for="agree">Я согласен с политикой конфиденциальности:</label>
+					<p>Заявка на консультацию <span>(бесплатно)</span></p>
+					<input type="text" id="name" name="name" placeholder="Имя" required>
+					<input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+					<div class="section1__agree">
 					<input type="checkbox" id="agree" name="agree" required>
+					<span>Я согласен с <a href="#">Политикой конфиденциальности</a>
+					</span>
+					</div>
+					<div class="section1__submit">
+						<button type="submit" onclick="updateTimer">Отправить</button>
+						<div class="section__1-timer" id="timer">
+							<span>Ожидайте звонка в течение:</span>
+							<span id="minutes">5</span> 
+							<span id="seconds">00</span> 
+					  </div>
+					</div>
 					
-					<button type="submit">Отправить</button>
 			  </form>
 		 
-			  <div class="section__1-timer" id="timer">
-					Ожидайте звонка в течение:
-					<span id="minutes">5</span> минут
-					<span id="seconds">00</span> секунд
-			  </div>
+
 			</div>
 		</div>
 		</section>
