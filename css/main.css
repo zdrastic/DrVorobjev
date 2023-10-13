@@ -198,9 +198,10 @@ p, span {
   width: 434px;
   background-repeat: no-repeat;
   background-position: 8px 50%;
+  padding-left: 60px;
+  font-size: 25px;
 }
 .section1__form #name::placeholder, .section1__form #phone::placeholder {
-  padding-left: 60px;
   font-size: 20px;
 }
 .section1__form .section1__agree {
