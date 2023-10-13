@@ -24,3 +24,13 @@
         }
         
         //updateTimer();
+
+		  var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 3, // Определяет количество видимых слайдов
+			spaceBetween: 0, // Отступ между слайдами
+			navigation: {
+			  nextEl: '.swiper-button-next', // Селектор для стрелки вправо
+			},
+			loop: true, // Делает свайпер бесконечным
+			mousewheel: true, // Разрешает прокрутку мышкой
+		 });
